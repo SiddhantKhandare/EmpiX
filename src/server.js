@@ -11,7 +11,7 @@ const leaveRoutes = require("./routes/leaveRoutes");
 const idCardRoutes = require("./routes/idCardRoutes");
 const salaryRoutes = require("./routes/salaryRoutes");
 const notificationRoutes = require("./routes/notificationRoutes");
-
+const dashboardRoutes = require("./routes/dashboardRoutes");
 
 
 const app = express();
@@ -37,7 +37,7 @@ app.use("/api/leave", leaveRoutes);
 app.use("/api/idcard", idCardRoutes);
 app.use("/api/salary", salaryRoutes);
 app.use("/api/notification", notificationRoutes);
-
+app.use("/api/dashboard", dashboardRoutes);
 
 
 // ❌ 404 Handler
